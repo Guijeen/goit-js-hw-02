@@ -1,8 +1,6 @@
 function checkForSpam(message) {
-  return (
-    message.toLowerCase().includes("spam") ||
-    message.toLowerCase().includes("sale")
-  );
+  let messageLower = message.toLowerCase();
+  return messageLower.includes("spam") || messageLower.includes("sale");
 }
 
 console.log(checkForSpam("Latest technology news")); // false
